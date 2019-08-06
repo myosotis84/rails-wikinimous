@@ -1,0 +1,38 @@
+// Place all the styles related to the Articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.content {
+  margin: 8px auto;
+  width: 60vw;
+  min-width: 300px;
+}
+
+header {
+  width: 100%;
+  background-color: #f8f8f8;
+  color: #5e5e5e;
+  border-bottom: 1px solid #e7e7e7;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h3 {
+  padding: 0 16px;
+  margin: 0;
+}
+
+body {
+  margin:0;
+}
+
+#new-article {
+  padding-right: 16px;
+}
+
+.fas, .far {
+  padding: 0 4px;
+  font-size: 0.6em;
+}

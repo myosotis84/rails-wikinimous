@@ -1,0 +1,19 @@
+<header>
+  <h3>Wikinimous</h3>
+  <p id="new-article"><%= link_to 'New article', new_article_path %></p>
+</header>
+<div class="content">
+  <h1><%= @article.title %>
+    <!-- <i class="fas fa-pencil-alt"></i> -->
+    <%= link_to edit_article_path(@article) do %>
+      <i class="fas fa-pencil-alt"></i>
+    <% end %>
+    <!-- <i class="far fa-trash-alt"></i> -->
+    <%= link_to article_path(@article), method: :delete,
+    data: { confirm: "Are you sure?" } do %>
+      <i class="far fa-trash-alt"></i>
+    <% end %>
+  </h1>
+  <div><%= @article.content %></div>
+  <p><%= link_to "Back", articles_path %></p>
+</div>
